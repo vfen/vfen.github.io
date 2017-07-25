@@ -382,7 +382,28 @@
       
         
           
-            
+            <pre><code>&lt;form id=&quot;form1&quot; runat=&quot;server&quot; class=&quot;layui-form&quot;&gt;
+&lt;div class=&quot;layui-form-pane w&quot; cust=&quot;form&quot;&gt;
+    &lt;div class=&quot;layui-form layui-form-pane formBody&quot;&gt;
+        &lt;asp:HiddenField ID=&quot;ObjectTeamID&quot; runat=&quot;server&quot; /&gt;
+        &lt;div class=&quot;layui-form-item&quot;&gt;
+            &lt;label class=&quot;layui-form-label&quot;&gt;
+                帐号&lt;/label&gt;
+            &lt;div class=&quot;layui-input-block&quot;&gt;
+                &lt;asp:TextBox ID=&quot;AccountID&quot; runat=&quot;server&quot; lay-verify=&quot;required&quot; placeholder=&quot;请输入帐号&quot;
+                    class=&quot;layui-input&quot;&gt;&lt;/asp:TextBox&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;layui-form-item&quot;&gt;
+            &lt;div class=&quot;layui-input-block&quot;&gt;
+                &lt;asp:Button ID=&quot;SubmitBtnId&quot; runat=&quot;server&quot; OnClick=&quot;Btn_Submit&quot; Text=&quot;提交&quot; class=&quot;layui-btn layui-btn-normal layui-btn-small&quot;
+                    lay-submit=&quot;&quot; lay-filter=&quot;SubmitSuppBtn&quot; /&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/form&gt;
+</code></pre>
           
         
       
