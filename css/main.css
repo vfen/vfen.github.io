@@ -1684,7 +1684,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d1f6ff;
+  background: #6a4f11;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2778,12 +2778,7 @@ hr {
   padding: 0;
 }
 body {
-  background: #fafafa;
-  color: #333;
   font: 12px/1.5 'Microsoft Yahei', Tahoma, 'Simsun';
-}
-.widescreen {
-  background: #f5f5f5;
 }
 .spig {
   display: block;
@@ -2791,7 +2786,7 @@ body {
   height: 190px;
   position: absolute;
   top: -200px;
-  left: 160px;
+  left: 0px;
   z-index: 9999999;
 }
 #message {
