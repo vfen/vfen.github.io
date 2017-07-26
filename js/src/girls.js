@@ -3,7 +3,7 @@
 jQuery(document).ready(function ($) {
     $("#spig").mousedown(function (e) {
         if(e.which==3){
-        showMessage("恭喜你，发现秘密通道:<br /><br /><a href=\"http://fishc.taobao.com\" title=\"资源打包\">资源打包</a>        <a href=\"http://bbs.fishc.com\" title=\"交流论坛\">交流论坛</a>",10000);
+        showMessage("恭喜你，发现秘密通道:<br /><br /><a href=\"https://huanghaifen.github.io\" title=\"小黄\">小黄</a>        <a href=\"https://huanghaifen.github.io\" title=\"交流论坛\">交流论坛</a>",10000);
 }
 });
 $("#spig").bind("contextmenu", function(e) {

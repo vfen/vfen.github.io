@@ -1684,7 +1684,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff12ff;
+  background: #e35878;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2777,6 +2777,14 @@ hr {
   margin: 0;
   padding: 0;
 }
+body {
+  background: #fafafa;
+  color: #333;
+  font: 12px/1.5 'Microsoft Yahei', Tahoma, 'Simsun';
+}
+.widescreen {
+  background: #f5f5f5;
+}
 .spig {
   display: block;
   width: 150px;
@@ -2784,7 +2792,7 @@ hr {
   position: absolute;
   top: -200px;
   left: 160px;
-  z-index: 9999;
+  z-index: 9999999;
 }
 #message {
   color: #191919;
@@ -2799,7 +2807,7 @@ hr {
   position: absolute;
   text-align: center;
   width: auto !important;
-  z-index: 10000;
+  z-index: 10000000;
   -moz-box-shadow: 0 0 15px #eee;
   -webkit-box-shadow: 0 0 15px #eee;
   border-color: #eee;
@@ -2810,5 +2818,5 @@ hr {
   width: 150px;
   height: 190px;
   cursor: move;
-  background: url("/images/spig.png") no-repeat;
+  background: url("images/spig.png") no-repeat;
 }
