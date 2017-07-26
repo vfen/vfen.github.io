@@ -55,7 +55,7 @@ jQuery(document).ready(function ($) {
     }
     $(".spig").animate({
         top: $(".spig").offset().top + 300,
-        left: document.body.offsetWidth - 300
+        left: document.body.offsetWidth -(document.body.offsetWidth - 900)/2-128
     },
 	{
 	    queue: false,
@@ -146,7 +146,7 @@ jQuery(document).ready(function ($) {
         var i2 = Math.floor(Math.random() * s.length);
             $(".spig").animate({
             left: document.body.offsetWidth/2*(1+s[i1]),
-            top:  document.body.offsetheight/2*(1+s[i1])
+            top:  (document.body.offsetWidth -(document.body.offsetWidth - 900)/2)/2*(1+s[i1])
         },
 			{
 			    duration: 2000,
