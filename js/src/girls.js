@@ -55,7 +55,7 @@ jQuery(document).ready(function ($) {
     }
     $(".spig").animate({
         top: $(".spig").offset().top + 300,
-        left: document.body.offsetWidth -(document.body.offsetWidth - 900)/2-128
+        left: document.body.offsetWidth -(document.body.offsetWidth - 900)/2-160
     },
 	{
 	    queue: false,
