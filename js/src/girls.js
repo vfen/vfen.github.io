@@ -35,6 +35,7 @@ jQuery(document).ready(function ($) {
 
 //开始
 jQuery(document).ready(function ($) {
+	var isindex = false; var title = "第一个程序 &#8211; 我的编程之路！"; var visitor = "亲爱的骚年！";
     if (isindex) { //如果是主页
         var now = (new Date()).getHours();
         if (now > 0 && now <= 6) {
