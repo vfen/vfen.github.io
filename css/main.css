@@ -1684,7 +1684,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #e35878;
+  background: #d1f6ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2818,5 +2818,5 @@ body {
   width: 150px;
   height: 190px;
   cursor: move;
-  background: url("images/spig.png") no-repeat;
+  background: url("/images/spig.png") no-repeat;
 }
