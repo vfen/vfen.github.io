@@ -89,18 +89,18 @@
 
 
 
-<meta name="description" content="如何插入公式￥￥数学公式￥￥（要把人民币符号换成美元符号）">
+<meta name="description" content="如何插入公式￥￥数学公式￥￥（要把人民币符号换成美元符号） 例子：$$J\alpha(x) = \sum{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha}$$">
 <meta name="keywords" content="Markdown">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Markdown输入数学公式">
 <meta property="og:url" content="https://huanghaifen.github.io/2017/07/27/hexo_next/Markdown/Markdown输入数学公式/index.html">
 <meta property="og:site_name" content="繒經最羙">
-<meta property="og:description" content="如何插入公式￥￥数学公式￥￥（要把人民币符号换成美元符号）">
+<meta property="og:description" content="如何插入公式￥￥数学公式￥￥（要把人民币符号换成美元符号） 例子：$$J\alpha(x) = \sum{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha}$$">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-07-27T04:19:41.596Z">
+<meta property="og:updated_time" content="2017-07-27T04:52:55.841Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Markdown输入数学公式">
-<meta name="twitter:description" content="如何插入公式￥￥数学公式￥￥（要把人民币符号换成美元符号）">
+<meta name="twitter:description" content="如何插入公式￥￥数学公式￥￥（要把人民币符号换成美元符号） 例子：$$J\alpha(x) = \sum{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha}$$">
 
 
 
@@ -428,6 +428,31 @@
 
       
         <h1 id="如何插入公式"><a href="#如何插入公式" class="headerlink" title="如何插入公式"></a>如何插入公式</h1><p>￥￥数学公式￥￥（要把人民币符号换成美元符号）</p>
+<p>例子：<br>$$J\alpha(x) = \sum{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha}$$</p>
+<a id="more"></a>
+<h1 id="如何输入上下标"><a href="#如何输入上下标" class="headerlink" title="如何输入上下标"></a>如何输入上下标</h1><p>^表示上标, _表示下标。如果上下标的内容多于一个字符，要用{}把这些内容括起来当成一个整体。上下标是可以嵌套的，也可以同时使用。</p>
+<p>例子：x^{y^z}=(1+{\rm e}^x)^{-2xy^w}<br>显示：$$x^{y^z}=(1+{\rm e}^x)^{-2xy^w}$$</p>
+<h1 id="如何输入括号和分隔符"><a href="#如何输入括号和分隔符" class="headerlink" title="如何输入括号和分隔符"></a>如何输入括号和分隔符</h1><p>()、[]和|表示自己，{}表示{}。当要显示大号的括号或分隔符时，要用\left和\right命令。</p>
+<p>例子：f(x,y,z) = 3y^2z \left( 3+\frac{7x+5}{1+y^2} \right)<br>显示：$$f(x,y,z) = 3y^2z \left( 3+\frac{7x+5}{1+y^2} \right)$$<br>有时候要用\left.或\right.进行匹配而不显示本身。  </p>
+<h1 id="如何输入分数"><a href="#如何输入分数" class="headerlink" title="如何输入分数"></a>如何输入分数</h1><p>例子：\frac{1}{3}　或　1 \over 3<br>显示：$$\frac{1}{3}$$　或　$$1 \over 3$$</p>
+<h1 id="如何输入开方"><a href="#如何输入开方" class="headerlink" title="如何输入开方"></a>如何输入开方</h1><p>例子：\sqrt{2}　和　\sqrt[n]{3}</p>
+<h1 id="如何输入省略号"><a href="#如何输入省略号" class="headerlink" title="如何输入省略号"></a>如何输入省略号</h1><p>数学公式中常见的省略号有两种，\ldots表示与文本底线对齐的省略号，\cdots表示与文本中线对齐的省略号。</p>
+<p>例子：f(x1,x2,\ldots,xn) = x1^2 + x2^2 + \cdots + xn^2<br>显示：$$f(x1,x2,\ldots,xn) = x1^2 + x2^2 + \cdots + xn^2$$</p>
+<h1 id="如何输入矢量"><a href="#如何输入矢量" class="headerlink" title="如何输入矢量"></a>如何输入矢量</h1><p>例子：\vec{a} \cdot \vec{b}=0</p>
+<h1 id="如何输入积分"><a href="#如何输入积分" class="headerlink" title="如何输入积分"></a>如何输入积分</h1><p>例子：\int_0^1 x^2 {\rm d}x</p>
+<h1 id="如何输入极限运算"><a href="#如何输入极限运算" class="headerlink" title="如何输入极限运算"></a>如何输入极限运算</h1><p>例子：\lim_{n \rightarrow +\infty} \frac{1}{n(n+1)}</p>
+<h1 id="如何输入累加、累乘运算"><a href="#如何输入累加、累乘运算" class="headerlink" title="如何输入累加、累乘运算"></a>如何输入累加、累乘运算</h1><p>例子：\sum{i=0}^n \frac{1}{i^2}　和　\prod{i=0}^n \frac{1}{i^2}</p>
+<h1 id="如何进行公式应用"><a href="#如何进行公式应用" class="headerlink" title="如何进行公式应用"></a>如何进行公式应用</h1><p>$$\begin{equation}\label{equation1}r = rF+ \beta(rM – r_F) + \epsilon\end{equation}$$</p>
+<h1 id="如何输入希腊字母"><a href="#如何输入希腊字母" class="headerlink" title="如何输入希腊字母"></a>如何输入希腊字母</h1><p>例子： \alpha　A　\beta　B　\gamma　\Gamma　\delta　\Delta　\epsilon　E \varepsilon　　\zeta　Z　\eta　H　\theta　\Theta　\vartheta \iota　I　\kappa　K　\lambda　\Lambda　\mu　M　\nu　N \xi　\Xi　o　O　\pi　\Pi　\varpi　　\rho　P \varrho　　\sigma　\Sigma　\varsigma　　\tau　T　\upsilon　\Upsilon \phi　\Phi　\varphi　　\chi　X　\psi　\Psi　\omega　\Omega<br>$$\Omega$$</p>
+<h1 id="如何输入其它特殊字符"><a href="#如何输入其它特殊字符" class="headerlink" title="如何输入其它特殊字符"></a>如何输入其它特殊字符</h1><p>关系运算符:<br>\pm \times \div \mid \nmid \cdot \circ \ast \bigodot  \bigotimes \bigoplus \leq \geq \neq \approx \equiv \sum \prod \coprod \emptyset \in \notin \subset \supset \subseteq \supseteq \bigcap \bigcup \bigvee \bigwedge \biguplus \bigsqcup \log \lg \ln  </p>
+<p>三角运算符：<br>\bot \angle 30^\circ \sin \cos \tan \cot \sec \csc  </p>
+<p>微积分运算符:<br>\prime \int \iint \iiint \iiiint \oint \lim \infty \nabla  </p>
+<p>逻辑运算符：<br>\because \therefore \forall \exists \not= \not&gt; \not\subset  </p>
+<p>戴帽符号：<br>\hat{y} \check{y} \breve{y}  </p>
+<p>连线符号：<br>\overline{a+b+c+d} \underline{a+b+c+d} \overbrace{a+\underbrace{b+c}{1.0}+d}^{2.0}  </p>
+<p>箭头符号：<br>\uparrow \downarrow \Uparrow \Downarrow \rightarrow \leftarrow \Rightarrow \Leftarrow \longrightarrow \longleftarrow \Longrightarrow \Longleftarrow  </p>
+<p>要输出字符　空格　#　$　%　&amp;　<em>　{　}　，用命令：　\空格　#　\$　\%　\&amp;　</em>　{　}  </p>
+<h1 id="如何进行字体转换"><a href="#如何进行字体转换" class="headerlink" title="如何进行字体转换"></a>如何进行字体转换</h1><p>要对公式的某一部分字符进行字体转换，可以用{\rm 需转换的部分字符}命令，其中\rm可以参照下表选择合适的字体。一般情况下，公式默认为意大利体。 \rm　　罗马体　　　　　　　\it　　意大利体 \bf　　黑体　　　　　　　　\cal 　花体 \sl　　倾斜体　　　　　　　\sf　　等线体 \mit 　数学斜体　　　　　　\tt　　打字机字体 \sc　　小体大写字母</p>
 
       
     </div>
@@ -750,7 +775,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#如何插入公式"><span class="nav-number">1.</span> <span class="nav-text">如何插入公式</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#如何插入公式"><span class="nav-number">1.</span> <span class="nav-text">如何插入公式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#如何输入上下标"><span class="nav-number">2.</span> <span class="nav-text">如何输入上下标</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#如何输入括号和分隔符"><span class="nav-number">3.</span> <span class="nav-text">如何输入括号和分隔符</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#如何输入分数"><span class="nav-number">4.</span> <span class="nav-text">如何输入分数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#如何输入开方"><span class="nav-number">5.</span> <span class="nav-text">如何输入开方</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#如何输入省略号"><span class="nav-number">6.</span> <span class="nav-text">如何输入省略号</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#如何输入矢量"><span class="nav-number">7.</span> <span class="nav-text">如何输入矢量</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#如何输入积分"><span class="nav-number">8.</span> <span class="nav-text">如何输入积分</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#如何输入极限运算"><span class="nav-number">9.</span> <span class="nav-text">如何输入极限运算</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#如何输入累加、累乘运算"><span class="nav-number">10.</span> <span class="nav-text">如何输入累加、累乘运算</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#如何进行公式应用"><span class="nav-number">11.</span> <span class="nav-text">如何进行公式应用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#如何输入希腊字母"><span class="nav-number">12.</span> <span class="nav-text">如何输入希腊字母</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#如何输入其它特殊字符"><span class="nav-number">13.</span> <span class="nav-text">如何输入其它特殊字符</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#如何进行字体转换"><span class="nav-number">14.</span> <span class="nav-text">如何进行字体转换</span></a></li></ol></div>
             
 
           </div>
