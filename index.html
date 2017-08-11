@@ -605,85 +605,16 @@
 
       
         
-          
-            <blockquote>
+          <blockquote>
 <p>使用js+Ajax请求API接口数据-带请求头方式  </p>
 </blockquote>
-<h1 id="前台调用："><a href="#前台调用：" class="headerlink" title="前台调用："></a>前台调用：</h1><pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
-    function zLoginCheck() {
-        var Account = &apos;admin;
-        var Password = &apos;DC483E80A7A0BD9EF71D8CF973673924&apos;;
-
-        var str = {
-            Account: Account,
-            Password: Password
-        }
-        $.ajax({
-            type: &quot;POST&quot;,
-            url: &apos;/Handle/zLogin.ashx&apos;,
-            dataType: &apos;json&apos;,
-            data: JSON.stringify(str),//
-            beforeSend: function (request) {
-                request.setRequestHeader(&quot;Method&quot;, &quot;Login&quot;);
-                request.setRequestHeader(&quot;timespan&quot;, &quot;1487586970772&quot;);
-                request.setRequestHeader(&quot;Nonce&quot;, &quot;726757&quot;);
-                request.setRequestHeader(&quot;Token&quot;, &quot;615d1c0ab53315a2&quot;);
-                request.setRequestHeader(&quot;Account&quot;, &quot;&quot;);
-                request.setRequestHeader(&quot;Source&quot;, &quot;2&quot;);
-                request.setRequestHeader(&quot;Version&quot;, &quot;139&quot;);
-                request.setRequestHeader(&quot;Sign&quot;, &quot;5329E35A3F60B7DFA147D20EF377888C&quot;);
-                request.setRequestHeader(&quot;Host&quot;, &quot;wsmvip.aisidi.com&quot;);
-                request.setRequestHeader(&quot;Content - Length&quot;, &quot;76&quot;);
-            },
-            success: function (data) {
-                if (data.Code == &quot;0000&quot;) {
-                    alert(JSON.stringify(data.Data));
-                    alert(&quot;Token:&quot; + data.Data.Token);
-                } else {
-                    alert(&apos;登录失败:&apos; + data.Message);
-                }
-            },
-            complete: function (XMLHttpRequest, textStatus) {
-                this; // 调用本次AJAX请求时传递的options参数
-            }
-        });
-    }
-&lt;/script&gt;
-</code></pre><h1 id="后台部分："><a href="#后台部分：" class="headerlink" title="后台部分："></a>后台部分：</h1><pre><code>/// &lt;summary&gt;
-/// 后台再请求别的接口的方法，体现了添加request header
-/// &lt;/summary&gt;
-/// &lt;returns&gt;&lt;/returns&gt;
-public string Login(string RequestString, HttpContext context)
-{
-    string url = https://xxx.xxxx.com/Services/Login.ashx;
-    string json = &quot;&quot;;
-    Encoding encoding = Encoding.UTF8;
-    HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
-    request.Method = &quot;post&quot;;
-    request.Headers.Add(&quot;Method&quot;, context.Request.Headers[&quot;Method&quot;]);
-    request.Headers.Add(&quot;timespan&quot;, context.Request.Headers[&quot;Timespan&quot;]);
-    request.Headers.Add(&quot;Nonce&quot;, context.Request.Headers[&quot;Nonce&quot;]);
-    request.Headers.Add(&quot;Token&quot;, context.Request.Headers[&quot;Token&quot;]);
-    request.Headers.Add(&quot;Account&quot;, System.Web.HttpUtility.UrlDecode(context.Request.Headers[&quot;Account&quot;]));
-    request.Headers.Add(&quot;Source&quot;, context.Request.Headers[&quot;Source&quot;]);
-    request.Headers.Add(&quot;Version&quot;, context.Request.Headers[&quot;Version&quot;]);
-    request.Headers.Add(&quot;Sign&quot;, context.Request.Headers[&quot;Sign&quot;]);
-
-
-    request.Accept = &quot;text/html, application/xhtml+xml, */*&quot;;
-    request.ContentType = &quot;application/x-www-form-urlencoded&quot;;
-    byte[] buffer = encoding.GetBytes(RequestString.ToString());
-    request.ContentLength = buffer.Length;
-    request.GetRequestStream().Write(buffer, 0, buffer.Length);
-    HttpWebResponse response = (HttpWebResponse)request.GetResponse();
-    using (StreamReader reader = new StreamReader(response.GetResponseStream(), Encoding.UTF8))
-    {
-        json = reader.ReadToEnd();
-    }
-    return json;
-}
-</code></pre><div id="spig" class="spig"><br>                    <div id="message"><br>                        加载中……</div><br>                    <div id="mumu" class="mumu"><br>                    </div></div>
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/07/28/csharp/基础/http-request/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -841,7 +772,8 @@ public string Login(string RequestString, HttpContext context)
       
         
           
-            <div id="spig" class="spig"><br>                    <div id="message"><br>                        加载中……</div><br>                    <div id="mumu" class="mumu"><br>                    </div></div>
+            <a id="more"></a>
+<div id="spig" class="spig"><br>                    <div id="message"><br>                        加载中……</div><br>                    <div id="mumu" class="mumu"><br>                    </div></div>
           
         
       
